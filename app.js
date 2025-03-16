@@ -2,6 +2,9 @@ const express = require('express');
 const dotenv = require('dotenv');
 const app = express();
 
+
+app.use(express.json());
+
 const studentRouter = require('./routes/StudentRoutes');
 
 const mongoose = require('mongoose');
